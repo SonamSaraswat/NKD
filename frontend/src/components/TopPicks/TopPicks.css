@@ -14,7 +14,7 @@
 }
 .top-products-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4 items per row */
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));  /* 4 items per row */
     gap: 20px;  /* Space between the images */
     justify-items: center;  /* Center the items within the grid cell */
 }

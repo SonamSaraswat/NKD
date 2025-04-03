@@ -3,23 +3,24 @@
 *{
   padding: 0;
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: Caveat,  cursive;
   scroll-behavior: smooth;
 }
-body{
-  min-height: 100vh;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   overflow-x: hidden;
-  
+  box-sizing: border-box;
 }
 a{
   text-decoration: none;
   color: inherit;
 }
-.app{
-  width:100%;
-  margin: auto;
-}
+
 
 @keyframes fadeIn{
   0%{
@@ -29,4 +30,41 @@ a{
     opacity: 1;
   }
 
+}
+.app {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+/* Fix for Navbar */
+.navbar {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Fix for Product Section */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* Reduce gap to avoid overflow */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Fix for Image Grid */
+.image-grid-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Ensure Images Do Not Overflow */
+.image-item {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }

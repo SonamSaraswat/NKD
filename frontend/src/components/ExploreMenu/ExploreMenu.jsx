@@ -9,7 +9,6 @@ const ExploreMenu = () => {
         <div className="explore-menu-list">
             <button className='explore-menu-items'>
               <a href='#color-inspo'>Color Inspo </a></button>
-            <button className='explore-menu-items'>Calculator</button>
             <button className='explore-menu-items'>
               <a href='#footer'>Connect</a></button>
             <button className='explore-menu-items'>
