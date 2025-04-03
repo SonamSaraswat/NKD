@@ -6,6 +6,7 @@ import Products from '../../components/Products/Products'
 import TopPicks from '../../components/TopPicks/TopPicks'
 import ColorInspo from '../../components/ColorInspo/ColorInspo'
 import Footer from '../../components/Footer/Footer'
+import CustomerTestimonals from '../../components/CustomerTestimonals/CustomerTestimonals'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Products/>
         <TopPicks/>
         <ColorInspo/>
+        <CustomerTestimonals/>
         
 
     </div>
